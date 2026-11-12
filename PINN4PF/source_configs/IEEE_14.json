@@ -1,0 +1,119 @@
+{
+  "method": "PINN4PF",
+  "system": "IEEE_14",
+  "mode": "train_test",
+  "data_root": "/data/ssd/wtdd/Slover/Data",
+  "device": "cuda",
+  "seed": 42,
+  "cpu_threads": 4,
+  "batch_size": 8192,
+  "evaluation_batch_size": 4096,
+  "operator_batch_size": 2048,
+  "min_batch_size": 1,
+  "data": {
+    "source": "csv",
+    "cache_read": false,
+    "cache_write": false,
+    "validation_samples": 4000,
+    "expected_train_samples": 36000,
+    "expected_test_samples": 4100,
+    "split_seed": 42,
+    "observed_train_pool": 40000,
+    "counts_confirmed": true,
+    "generation_required": false
+  },
+  "training": {
+    "initializer_width": 1536,
+    "epochs": 1000,
+    "learning_rate": 0.00013,
+    "min_learning_rate": 1e-05,
+    "weight_decay": 1.1e-05,
+    "gradient_clip": 10.0,
+    "validate_every": 10,
+    "operator_passes": 4,
+    "operator_noise_std": 0.003,
+    "operator_ridge": 1e-09,
+    "physics_warmup_epochs": 100,
+    "physics_weight": 0.71,
+    "scale_objective": true,
+    "minimum_epochs": 300,
+    "patience_epochs": 150,
+    "resume_weights": "/data/ssd/wtdd/Slover/RJMNC-V2/Benchmark/working/Benchmark/PINN4PF/Results/IEEE_14/model.pt"
+  },
+  "inference": {
+    "max_blocks": 10,
+    "tolerance": 0.0001,
+    "momentum_candidates": [
+      0.0
+    ],
+    "momentum_start_call": 6
+  },
+  "benchmark": {
+    "enabled": false,
+    "single_samples": 40,
+    "repeats": 3,
+    "cpu_threads": 1
+  },
+  "save_heatmap": true,
+  "memory_estimate": {
+    "parameters": 4004,
+    "parameter_fp32_mib": 0.0152740478515625,
+    "persistent_gpu_data_estimate_gib": 0.023245811462402344,
+    "conservative_estimate_gib": 0.8113914132118225,
+    "includes_workspace_margin_mib": 768,
+    "max_Ybus_row_degree": 6,
+    "GIN_workspace_formula": "30 * batch * (2*(N-1))^2 * 4 bytes; training FP32",
+    "note": "Analytical planning envelope, not measured peak. Real CSV minibatch forward/backward probe records actual peak before training."
+  },
+  "oom_policy": {
+    "max_attempts": 2,
+    "halve_batch_after_first_failure": true,
+    "delete_failed_attempt_outputs": true,
+    "after_second_failure": "\u5185\u5b58\u5d29\u6e83\uff0c\u8df3\u8fc7"
+  },
+  "evaluation_initial_state": "dataset_initial_from_csv",
+  "batch_probe": {
+    "probes": [
+      {
+        "batch": 128,
+        "seconds": 0.00596129335463047,
+        "samples_per_second": 21471.850550782783,
+        "peak_gib": 0.017512798309326172
+      },
+      {
+        "batch": 512,
+        "seconds": 0.0045356834307312965,
+        "samples_per_second": 112882.65766763384,
+        "peak_gib": 0.01922321319580078
+      },
+      {
+        "batch": 2048,
+        "seconds": 0.004512764513492584,
+        "samples_per_second": 453823.813291552,
+        "peak_gib": 0.026078224182128906
+      },
+      {
+        "batch": 4096,
+        "seconds": 0.004624168388545513,
+        "samples_per_second": 885780.892007775,
+        "peak_gib": 0.035218238830566406
+      },
+      {
+        "batch": 8192,
+        "seconds": 0.004728149312237899,
+        "samples_per_second": 1732601.7980854781,
+        "peak_gib": 0.054078102111816406
+      }
+    ],
+    "selected": {
+      "batch": 8192,
+      "seconds": 0.004728149312237899,
+      "samples_per_second": 1732601.7980854781,
+      "peak_gib": 0.054078102111816406
+    },
+    "parameters": 4004,
+    "note": "Synthetic shape-equivalent timing, includes native physics backward and Adam; excludes resident full data. Reserve >=8GiB for data and workspace."
+  },
+  "experiment_note": "Throughput-probed batch8192, maximum1000 epochs; warm start previous validation-best weights; early stop after >=300 epochs with150 epochs no validation MSE improvement. Same native loss and architecture, train-only normalization. Optimizer restarted explicitly.",
+  "evaluation_output": "/data/ssd/wtdd/Slover/RJMNC-V2/Benchmark/working/Benchmark/PINN4PF/paper_budget_fast/IEEE_14"
+}

@@ -1,0 +1,71 @@
+{
+  "method": "GIN",
+  "system": "IEEE_300",
+  "mode": "train_test",
+  "data_root": "/data/ssd/wtdd/Slover/Data",
+  "device": "cuda",
+  "seed": 42,
+  "cpu_threads": 4,
+  "batch_size": 128,
+  "evaluation_batch_size": 256,
+  "operator_batch_size": 256,
+  "min_batch_size": 1,
+  "data": {
+    "source": "csv",
+    "cache_read": false,
+    "cache_write": false,
+    "validation_samples": 4000,
+    "expected_train_samples": 36000,
+    "expected_test_samples": 4100,
+    "split_seed": 42,
+    "observed_train_pool": 40000,
+    "counts_confirmed": true,
+    "generation_required": true
+  },
+  "training": {
+    "initializer_width": 1536,
+    "epochs": 100,
+    "learning_rate": 5e-05,
+    "min_learning_rate": 1e-05,
+    "weight_decay": 1e-06,
+    "gradient_clip": 10.0,
+    "validate_every": 5,
+    "operator_passes": 4,
+    "operator_noise_std": 0.003,
+    "operator_ridge": 1e-09,
+    "initial_checkpoint": "/data/ssd/wtdd/Slover/RJMNC-V2/Benchmark/GIN/Results/IEEE_300/model.pt"
+  },
+  "inference": {
+    "max_blocks": 10,
+    "tolerance": 0.0001,
+    "momentum_candidates": [
+      0.7
+    ],
+    "momentum_start_call": 6
+  },
+  "benchmark": {
+    "enabled": false,
+    "single_samples": 40,
+    "repeats": 3,
+    "cpu_threads": 1
+  },
+  "save_heatmap": true,
+  "memory_estimate": {
+    "parameters": 3588,
+    "parameter_fp32_mib": 0.0136871337890625,
+    "persistent_gpu_data_estimate_gib": 0.26732683181762695,
+    "conservative_estimate_gib": 21.488199770450592,
+    "includes_workspace_margin_mib": 768,
+    "max_Ybus_row_degree": 12,
+    "GIN_workspace_formula": "30 * batch * (2*(N-1))^2 * 4 bytes; training FP32",
+    "note": "Analytical planning envelope, not measured peak. Real CSV minibatch forward/backward probe records actual peak before training.",
+    "sizing_note": "Raised after actual lower-dimensional GIN probe showed analytical envelope is conservative; full batch probe must pass before training"
+  },
+  "oom_policy": {
+    "max_attempts": 2,
+    "halve_batch_after_first_failure": true,
+    "delete_failed_attempt_outputs": true,
+    "after_second_failure": "\u5185\u5b58\u5d29\u6e83\uff0c\u8df3\u8fc7"
+  },
+  "evaluation_initial_state": "dataset_initial_from_csv"
+}

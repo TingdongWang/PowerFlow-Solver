@@ -1,0 +1,6 @@
+# Install PyTorch separately for the required CUDA runtime (see Readme.md).
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+matplotlib==3.9.2
+psutil==7.2.2

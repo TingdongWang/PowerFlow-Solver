@@ -1,0 +1,52 @@
+{
+  "checks": [
+    {
+      "entry": "Proposed/main.py",
+      "returncode": 0,
+      "error": ""
+    },
+    {
+      "entry": "GIN/train.py",
+      "returncode": 0,
+      "error": ""
+    },
+    {
+      "entry": "GIN/evaluate.py",
+      "returncode": 0,
+      "error": ""
+    },
+    {
+      "entry": "PINN4PF/train.py",
+      "returncode": 0,
+      "error": ""
+    },
+    {
+      "entry": "PINN4PF/evaluate.py",
+      "returncode": 0,
+      "error": ""
+    },
+    {
+      "entry": "UPINN/train.py",
+      "returncode": 0,
+      "error": ""
+    },
+    {
+      "entry": "UPINN/evaluate.py",
+      "returncode": 0,
+      "error": ""
+    },
+    {
+      "entry": "PF_Data_Generation/generate.py",
+      "returncode": 0,
+      "error": ""
+    },
+    {
+      "entry": "generator_cpp_syntax",
+      "returncode": 0,
+      "error": ""
+    }
+  ],
+  "date": "2026-11-10",
+  "scope": "Historical entry-point and generator syntax checks before removal of the native NR wrapper. Remaining Python source syntax checked after removal; no training or evaluation was run.",
+  "native_dependencies": "Uses the existing server SciPy/Matplotlib installations; a clean installation on another machine was not tested."
+}

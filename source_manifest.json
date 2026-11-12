@@ -1,0 +1,416 @@
+{
+  "snapshot_date": "2026-11-10",
+  "source_roots": [
+    "RJMNC-V2/Proposed/StateInputExperiment",
+    "RJMNC-V2/Benchmark/working",
+    "Data_Gen"
+  ],
+  "changes": "Local import paths, configurable CSV root, six-folder entry points, fresh-start configs and generator paths only; numerical methods retained.",
+  "files": [
+    {
+      "file": "Proposed/main.py",
+      "source": "Proposed/StateInputExperiment/main.py",
+      "source_sha256": "62c154796563e8d72310f1de4b60f4557f9347d595f485baf320b176b50b304a",
+      "packaged_sha256": "62c154796563e8d72310f1de4b60f4557f9347d595f485baf320b176b50b304a"
+    },
+    {
+      "file": "Proposed/runtime.py",
+      "source": "Proposed/StateInputExperiment/runtime.py",
+      "source_sha256": "ece940795bdde792dcb7bfaaee41b7c963f831ff0f5810be99b1f5372114d4c3",
+      "packaged_sha256": "eb898c88e314ab78396304bb5879f64603d9e97411ab74f52db938b9c4c50321"
+    },
+    {
+      "file": "Proposed/data.py",
+      "source": "Proposed/StateInputExperiment/data.py",
+      "source_sha256": "895598ef24258887b664d4e917eacf3c0de404a9e8feea195a1eefbf6f953274",
+      "packaged_sha256": "3d503a2c9976501b5130119251bb53ac050d4575d0dd3c4c0bec8cf4df80db62"
+    },
+    {
+      "file": "Proposed/model.py",
+      "source": "Proposed/StateInputExperiment/model.py",
+      "source_sha256": "777044b7567a40619396937a27450d27a241ae98d00edc0e538a921ba1ea6015",
+      "packaged_sha256": "58301a8c4256668177951f67464ae0696fa1154f33e813c6312f37fd510121b7"
+    },
+    {
+      "file": "Proposed/Function.py",
+      "source": "Proposed/StateInputExperiment/Function.py",
+      "source_sha256": "d6c423db5cb9f6fe93b8453a15556379815459ef47d830863dee29a48ce49d4a",
+      "packaged_sha256": "d6c423db5cb9f6fe93b8453a15556379815459ef47d830863dee29a48ce49d4a"
+    },
+    {
+      "file": "Proposed/Loss.py",
+      "source": "Proposed/StateInputExperiment/Loss.py",
+      "source_sha256": "a413943765707368f6e69a37aa8e021421bc7fae255bd214c666d66cbf7f8752",
+      "packaged_sha256": "a413943765707368f6e69a37aa8e021421bc7fae255bd214c666d66cbf7f8752"
+    },
+    {
+      "file": "Proposed/train.py",
+      "source": "Proposed/StateInputExperiment/train.py",
+      "source_sha256": "c6f938c69f5287e7d8acf5cfa10e0b9baeb362dfe9ad417d2675ea1a0e774c78",
+      "packaged_sha256": "6dd450bacc90b9992b517a102f0e29144cc280a84eb67f836a24f2148a7bf35b"
+    },
+    {
+      "file": "Proposed/evaluate.py",
+      "source": "Proposed/StateInputExperiment/evaluate.py",
+      "source_sha256": "e0505ac5f632999efb916a28314674a80ec79a0568f8903f7bc7aa7f5890d737",
+      "packaged_sha256": "f5f1af1b5fc87288ee188f1e5426de670b80c6ac41d0429797b2e86a5943728b"
+    },
+    {
+      "file": "Proposed/inference.py",
+      "source": "Proposed/StateInputExperiment/inference.py",
+      "source_sha256": "d4ece0e913c8671d55e7e4cdf93551141a7aa797913756c5b65f65e12b4b9beb",
+      "packaged_sha256": "d4ece0e913c8671d55e7e4cdf93551141a7aa797913756c5b65f65e12b4b9beb"
+    },
+    {
+      "file": "Proposed/plot.py",
+      "source": "Proposed/StateInputExperiment/plot.py",
+      "source_sha256": "737151b41a678156cb218fd92e3b539201bd88c4376ef07bcd272f0f69b6eb11",
+      "packaged_sha256": "737151b41a678156cb218fd92e3b539201bd88c4376ef07bcd272f0f69b6eb11"
+    },
+    {
+      "file": "Proposed/_baseline/common.py",
+      "source": "Benchmark/working/Benchmark/_shared/common.py",
+      "source_sha256": "bd06cc93ac6bb6782003560b3d05cdc45f2ba124b6bc4490c8ed6cbc7735bc6f",
+      "packaged_sha256": "3bf88a786327799db3f22411c92fe8f8bee88079252211efb879242ee9dff82c"
+    },
+    {
+      "file": "Proposed/_baseline/defaults.py",
+      "source": "Benchmark/working/Benchmark/_shared/defaults.py",
+      "source_sha256": "6b76e3641edef9b3cdcc606aa2b632d51ee2b429bf8f6931c2290587d864a3e6",
+      "packaged_sha256": "6377d573d76ee4b022ec5e8bf1b467536e8da31e69a74964d045dff34aacbe09"
+    },
+    {
+      "file": "Proposed/_baseline/native_losses.py",
+      "source": "Benchmark/working/Benchmark/_shared/native_losses.py",
+      "source_sha256": "8af1a1b6fc60d22eee6107a790e59b0ba0ba76bd51cdaecc4acc90d2a4c12c30",
+      "packaged_sha256": "21fd06475827a826a9a2d121a47204ce8fc8be7888c86612f904554fc6eaefb1"
+    },
+    {
+      "file": "Proposed/_baseline/paths.py",
+      "source": "Benchmark/working/Benchmark/_shared/paths.py",
+      "source_sha256": "508498eb162d47ba86d361ae85f602f5fc6aea652002b8ef4cf0724abf209520",
+      "packaged_sha256": "825702835a2be94547d57b1609a9f5153fd7b6b88d778354376a58da7c057493"
+    },
+    {
+      "file": "Proposed/_baseline/training.py",
+      "source": "Benchmark/working/Benchmark/_shared/training.py",
+      "source_sha256": "160319915eaf98b18008773f79d27b40acccebb68f8b3ffe1e8ac16692d59f4e",
+      "packaged_sha256": "51cf73c66ef1864e274741210b99811e209f0551c1c3a58ca11275917739c4de"
+    },
+    {
+      "file": "Proposed/_baseline/__init__.py",
+      "source": "Benchmark/working/Benchmark/_shared/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "packaged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "Proposed/_baseline/data.py",
+      "source": "Benchmark/working/Proposed/data.py",
+      "source_sha256": "74f6645ded8c7bcced1c7850f9d345598807048055760a262ed469d1726e775f",
+      "packaged_sha256": "d9ed70a2b7410efdfcac309e24f2e1517616c03372e0eca4305c85e7eb7e0741"
+    },
+    {
+      "file": "Proposed/_baseline/evaluate.py",
+      "source": "Benchmark/working/Benchmark/run.py",
+      "source_sha256": "fc05b6da4784e1867f3b3ac38982e79b3de4269e1eae5d80ffca5b709e2bd28a",
+      "packaged_sha256": "a79071056de10fdd8ab93afaa11a13a576f91d32fd7c4b41ef5cc8c7d4e4f937"
+    },
+    {
+      "file": "Proposed/_baseline/continued_training.py",
+      "source": "Benchmark/working/Benchmark/PINN4PF/paper_budget_train.py",
+      "source_sha256": "edd2dfdcaa611dd9b20be446be346c990c634ac2b72f91a908947186b008b344",
+      "packaged_sha256": "32a4269e1a9c1e43e343555ba2d5e63f27e3538c2fccd9f22818c5d511432ce0"
+    },
+    {
+      "file": "GIN/__init__.py",
+      "source": "Benchmark/working/Benchmark/GIN/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "packaged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "GIN/model.py",
+      "source": "Benchmark/working/Benchmark/GIN/model.py",
+      "source_sha256": "6ae3eb4515bffe2a0c09b24a5a4ed66e1cff99904fdf1265fdc207a06d005865",
+      "packaged_sha256": "139dd01fcd7d991548236b219eea5de9cb45f82d6ce516a9fa0b330b1affe770"
+    },
+    {
+      "file": "UPINN/__init__.py",
+      "source": "Benchmark/working/Benchmark/UPINN/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "packaged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "UPINN/model.py",
+      "source": "Benchmark/working/Benchmark/UPINN/model.py",
+      "source_sha256": "22e11618b784af6d79c43584b0335c097ef0404f11bd826e835363ac3efe963f",
+      "packaged_sha256": "d928141c83083a857927acc6724e3511388482bce4843aec167dfce1df988d2c"
+    },
+    {
+      "file": "PINN4PF/__init__.py",
+      "source": "Benchmark/working/Benchmark/PINN4PF/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "packaged_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "PINN4PF/model.py",
+      "source": "Benchmark/working/Benchmark/PINN4PF/model.py",
+      "source_sha256": "f0c6ec418d8962243373ff5b14bf1dbad2cc69a20630d0b92682780b86463a12",
+      "packaged_sha256": "9775adae45859481d270a13a66c43fef109ee48b94d1242193c84ee2c2d27c36"
+    },
+    {
+      "file": "Proposed/source_configs/IEEE_14.json",
+      "source": "Proposed/StateInputExperiment/PQX/Results/IEEE_14/IEEE_14.json",
+      "source_sha256": "c0839bf07c1c0046ad3dedf978ede6c0e75cead553e02c076997896671d25311",
+      "packaged_sha256": "c0839bf07c1c0046ad3dedf978ede6c0e75cead553e02c076997896671d25311"
+    },
+    {
+      "file": "Proposed/source_configs/IEEE_118.json",
+      "source": "Proposed/StateInputExperiment/PQX/Results/IEEE_118/IEEE_118.json",
+      "source_sha256": "0fda6116c849447b97f09bd67385424283eb6ccaaa812c99c12b9b857384901b",
+      "packaged_sha256": "0fda6116c849447b97f09bd67385424283eb6ccaaa812c99c12b9b857384901b"
+    },
+    {
+      "file": "Proposed/source_configs/IEEE_300.json",
+      "source": "Proposed/StateInputExperiment/PQX/Results/IEEE_300/IEEE_300.json",
+      "source_sha256": "078875446bc0e4e9d67f8f96e6e500d89dd512bf3673edbef0c904dbac6e0ad8",
+      "packaged_sha256": "078875446bc0e4e9d67f8f96e6e500d89dd512bf3673edbef0c904dbac6e0ad8"
+    },
+    {
+      "file": "Proposed/source_configs/IEEE_1354.json",
+      "source": "Proposed/StateInputExperiment/PQX/Results/IEEE_1354/IEEE_1354.json",
+      "source_sha256": "868d89ffcebf4adcd5224e05a623867ebb74aa43568940c99e5f0c5ccf114040",
+      "packaged_sha256": "868d89ffcebf4adcd5224e05a623867ebb74aa43568940c99e5f0c5ccf114040"
+    },
+    {
+      "file": "GIN/source_configs/IEEE_14.json",
+      "source": "Benchmark/working/Benchmark/GIN/Results/IEEE_14/IEEE_14.json",
+      "source_sha256": "0751bdca7f29036ef58fe6a4506ead179beaba5d8c5a121e55a364769e167c5c",
+      "packaged_sha256": "0751bdca7f29036ef58fe6a4506ead179beaba5d8c5a121e55a364769e167c5c"
+    },
+    {
+      "file": "GIN/source_configs/IEEE_118.json",
+      "source": "Benchmark/working/Benchmark/GIN/Results/IEEE_118/IEEE_118.json",
+      "source_sha256": "4a64719712ac9d928840dbc9f90f722e9ded1f94d5f36f6f97928e52d3d03171",
+      "packaged_sha256": "4a64719712ac9d928840dbc9f90f722e9ded1f94d5f36f6f97928e52d3d03171"
+    },
+    {
+      "file": "GIN/source_configs/IEEE_300.json",
+      "source": "Benchmark/working/Benchmark/GIN/Results/IEEE_300/IEEE_300.json",
+      "source_sha256": "5d4536cdc30000696a32acbd44997443a7138299a67688cfd9acf1a58df6b43a",
+      "packaged_sha256": "5d4536cdc30000696a32acbd44997443a7138299a67688cfd9acf1a58df6b43a"
+    },
+    {
+      "file": "GIN/source_configs/IEEE_1354.json",
+      "source": "Benchmark/working/Benchmark/GIN/Results/IEEE_1354/IEEE_1354.json",
+      "source_sha256": "7eeba0618023606e3dac956d45a19ccdcf57951a46afe4116d2c92e4c6a2de18",
+      "packaged_sha256": "7eeba0618023606e3dac956d45a19ccdcf57951a46afe4116d2c92e4c6a2de18"
+    },
+    {
+      "file": "UPINN/source_configs/IEEE_14.json",
+      "source": "Benchmark/working/Benchmark/UPINN/Results/IEEE_14/IEEE_14.json",
+      "source_sha256": "e3fdcd479f73fb3a28a2e023868caec0cfad3017cf8bcfb897ac09b8509044de",
+      "packaged_sha256": "e3fdcd479f73fb3a28a2e023868caec0cfad3017cf8bcfb897ac09b8509044de"
+    },
+    {
+      "file": "UPINN/source_configs/IEEE_118.json",
+      "source": "Benchmark/working/Benchmark/UPINN/Results/IEEE_118/IEEE_118.json",
+      "source_sha256": "1ffa03fca009360f401bb541ffb2160a4f95c995eaa767312664ae18e7c2d5a2",
+      "packaged_sha256": "1ffa03fca009360f401bb541ffb2160a4f95c995eaa767312664ae18e7c2d5a2"
+    },
+    {
+      "file": "UPINN/source_configs/IEEE_300.json",
+      "source": "Benchmark/working/Benchmark/UPINN/Results/IEEE_300/IEEE_300.json",
+      "source_sha256": "b9f0e0373d969bfc74915352fccf70dc5807b1d0a48c4486e5a2cf71e663be18",
+      "packaged_sha256": "b9f0e0373d969bfc74915352fccf70dc5807b1d0a48c4486e5a2cf71e663be18"
+    },
+    {
+      "file": "UPINN/source_configs/IEEE_1354.json",
+      "source": "Benchmark/working/Benchmark/UPINN/Results/IEEE_1354/IEEE_1354.json",
+      "source_sha256": "80edec063d71d0e375ab3ecc4cdcc5c70ac25ffa49ef2541c2c674735790bc53",
+      "packaged_sha256": "80edec063d71d0e375ab3ecc4cdcc5c70ac25ffa49ef2541c2c674735790bc53"
+    },
+    {
+      "file": "PINN4PF/source_configs/IEEE_14.json",
+      "source": "Benchmark/working/Benchmark/PINN4PF/paper_budget_fast/IEEE_14/IEEE_14.json",
+      "source_sha256": "d2578d98033ffccd762c7f637c2e8405a6cd82a474ee08b13c10d9d6761ad6d4",
+      "packaged_sha256": "d2578d98033ffccd762c7f637c2e8405a6cd82a474ee08b13c10d9d6761ad6d4"
+    },
+    {
+      "file": "PINN4PF/source_configs/IEEE_118.json",
+      "source": "Benchmark/working/Benchmark/PINN4PF/paper_budget_fast/IEEE_118/IEEE_118.json",
+      "source_sha256": "9c99353d34fe935c91be7bef5ea5fce7731d2b82a2043a2b26622cc4a31d7fc0",
+      "packaged_sha256": "9c99353d34fe935c91be7bef5ea5fce7731d2b82a2043a2b26622cc4a31d7fc0"
+    },
+    {
+      "file": "PINN4PF/source_configs/IEEE_300.json",
+      "source": "Benchmark/working/Benchmark/PINN4PF/paper_budget_fast/IEEE_300/IEEE_300.json",
+      "source_sha256": "0602a300503b2fca5345fa1660bc0f80583fb9f5ec991d041c41d809c8adfc73",
+      "packaged_sha256": "0602a300503b2fca5345fa1660bc0f80583fb9f5ec991d041c41d809c8adfc73"
+    },
+    {
+      "file": "PINN4PF/source_configs/IEEE_1354.json",
+      "source": "Benchmark/working/Benchmark/PINN4PF/paper_budget_fast/IEEE_1354/IEEE_1354.json",
+      "source_sha256": "d6f3bb18b6e5d014f0143bf0189fa5b9b37c7de9fe88041d6ca6fd2b4d55e5e3",
+      "packaged_sha256": "d6f3bb18b6e5d014f0143bf0189fa5b9b37c7de9fe88041d6ca6fd2b4d55e5e3"
+    },
+    {
+      "file": "PF_Data_Generation/Slover_Gen_Data.cpp",
+      "source": "generator/Slover_Gen_Data.cpp",
+      "source_sha256": "9366c5558be1d4546b3f5df5579b6e1e982ddf750e45e4759a699ad01711bb02",
+      "packaged_sha256": "47eee1e94027cdfb8349c80375e593db9a5bace191db02bc1adf3bcf2bdb3932"
+    },
+    {
+      "file": "PF_Data_Generation/Platform.h",
+      "source": "generator/Platform.h",
+      "source_sha256": "74dd669e70003f2c183c2c257cf1aa69155002325f8a22acf1d708216cfa6a4b",
+      "packaged_sha256": "74dd669e70003f2c183c2c257cf1aa69155002325f8a22acf1d708216cfa6a4b"
+    },
+    {
+      "file": "PF_Data_Generation/Structure.h",
+      "source": "generator/Structure.h",
+      "source_sha256": "eb58eaedb27f43283bd8d7da4174fdf79daa01b784d2b9b6a2677a1b4b0a81a1",
+      "packaged_sha256": "eb58eaedb27f43283bd8d7da4174fdf79daa01b784d2b9b6a2677a1b4b0a81a1"
+    },
+    {
+      "file": "PF_Data_Generation/ThreadPool.h",
+      "source": "generator/ThreadPool.h",
+      "source_sha256": "4cce6f983f5100276a8c5fb460f577347f5b472906b1e6a8008e4814e88c1af6",
+      "packaged_sha256": "4cce6f983f5100276a8c5fb460f577347f5b472906b1e6a8008e4814e88c1af6"
+    },
+    {
+      "file": "PF_Data_Generation/IEEE_300/bus.txt",
+      "source": "generator/IEEE_300/bus.txt",
+      "source_sha256": "4c293997f76e157cfaa323c2340dc4380db4aa23de93a183980ab1fde2834296",
+      "packaged_sha256": "4c293997f76e157cfaa323c2340dc4380db4aa23de93a183980ab1fde2834296"
+    },
+    {
+      "file": "PF_Data_Generation/IEEE_300/line.txt",
+      "source": "generator/IEEE_300/line.txt",
+      "source_sha256": "c12632d1d529d9ec4ef65b12353d4d2f58bd510e3f08b510348ee3a29f48268b",
+      "packaged_sha256": "c12632d1d529d9ec4ef65b12353d4d2f58bd510e3f08b510348ee3a29f48268b"
+    },
+    {
+      "file": "PF_Data_Generation/IEEE_300/gen.txt",
+      "source": "generator/IEEE_300/gen.txt",
+      "source_sha256": "eaa52a542f1feba3ae54cd1e7653cf5dd980091aa1dc2880d551e07126a2f8fe",
+      "packaged_sha256": "eaa52a542f1feba3ae54cd1e7653cf5dd980091aa1dc2880d551e07126a2f8fe"
+    },
+    {
+      "file": "PF_Data_Generation/IEEE_1354/bus.txt",
+      "source": "generator/IEEE_1354/bus.txt",
+      "source_sha256": "f67bcbd0145bebafe77f5b878692501506b4949efb4e130dea2a88e2a871a962",
+      "packaged_sha256": "f67bcbd0145bebafe77f5b878692501506b4949efb4e130dea2a88e2a871a962"
+    },
+    {
+      "file": "PF_Data_Generation/IEEE_1354/line.txt",
+      "source": "generator/IEEE_1354/line.txt",
+      "source_sha256": "085bcf4e545e46b668d5865fee86b82ea94c9bcd841994f2a89f3fff77a6d720",
+      "packaged_sha256": "085bcf4e545e46b668d5865fee86b82ea94c9bcd841994f2a89f3fff77a6d720"
+    },
+    {
+      "file": "PF_Data_Generation/IEEE_1354/gen.txt",
+      "source": "generator/IEEE_1354/gen.txt",
+      "source_sha256": "9eadb64422ed6ae1c94264576c0adc33e04c7eab88a3c0d47103900982f1895d",
+      "packaged_sha256": "9eadb64422ed6ae1c94264576c0adc33e04c7eab88a3c0d47103900982f1895d"
+    },
+    {
+      "file": "environment.json",
+      "source": "environment.json",
+      "source_sha256": "17cf6c9b55bab06057945e0777024e32713f9d26570d784993571f4f3f90f060",
+      "packaged_sha256": "17cf6c9b55bab06057945e0777024e32713f9d26570d784993571f4f3f90f060"
+    }
+  ],
+  "package_files": {
+    ".gitignore": "d74b93633524af4ebca579bb7201a12f6a6118e12e9a04ff52f17b2f2f0feb89",
+    "environment.json": "17cf6c9b55bab06057945e0777024e32713f9d26570d784993571f4f3f90f060",
+    "Readme.md": "515ee9510aaee35b28f82137b7c267abd61e8b79e97b1e44d7740a7a035138c0",
+    "requirements.txt": "b8576c940664ee1733f849a1cae76fc499fa45747647e75d10d992caa927e2b4",
+    "verification.json": "5d7b23f6c251c17dd94858951cfcf02b3061f1daa7afce0e9b61375568ed4c6f",
+    "GIN/evaluate.py": "1305e9a1280ffb29ebe09a68ca6f6ad36676f655491cfaf4d10f37f070f37605",
+    "GIN/model.py": "139dd01fcd7d991548236b219eea5de9cb45f82d6ce516a9fa0b330b1affe770",
+    "GIN/Readme.md": "2b8aa055bf0b904ccf4b45005a52b80eaa9149be94f3ec326d586d5a37864331",
+    "GIN/train.py": "b60e00c7af8f89bdb4f660bc6728fd59f2abd139f9d82f43fdf1b7dc85f4d65d",
+    "GIN/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "PF_Data_Generation/generate.py": "6e06275a5fa0961574dcb451df71d837b08619a061b525ce4efc248cb2835a64",
+    "PF_Data_Generation/Platform.h": "74dd669e70003f2c183c2c257cf1aa69155002325f8a22acf1d708216cfa6a4b",
+    "PF_Data_Generation/Readme.md": "72c4ec6b55a4c1a71ca8305eae12bbf0bef790e444b8087311f2d20723e4fccd",
+    "PF_Data_Generation/Slover_Gen_Data.cpp": "47eee1e94027cdfb8349c80375e593db9a5bace191db02bc1adf3bcf2bdb3932",
+    "PF_Data_Generation/Structure.h": "eb58eaedb27f43283bd8d7da4174fdf79daa01b784d2b9b6a2677a1b4b0a81a1",
+    "PF_Data_Generation/ThreadPool.h": "4cce6f983f5100276a8c5fb460f577347f5b472906b1e6a8008e4814e88c1af6",
+    "PINN4PF/evaluate.py": "f896bf69a557c3a489c79d38568dd059fb62d42d8cebf3dc945606a0e28ad2f6",
+    "PINN4PF/model.py": "9775adae45859481d270a13a66c43fef109ee48b94d1242193c84ee2c2d27c36",
+    "PINN4PF/Readme.md": "375d8cde7c97ac07340252accc0e3e58a9906ab8e9794186ddd701ad175f6861",
+    "PINN4PF/train.py": "56e385c6ea4395c9eb1a3b63e2cb1d606fdff01dfe3f3ee63538de59e1c656f7",
+    "PINN4PF/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Proposed/data.py": "3d503a2c9976501b5130119251bb53ac050d4575d0dd3c4c0bec8cf4df80db62",
+    "Proposed/evaluate.py": "f5f1af1b5fc87288ee188f1e5426de670b80c6ac41d0429797b2e86a5943728b",
+    "Proposed/Function.py": "d6c423db5cb9f6fe93b8453a15556379815459ef47d830863dee29a48ce49d4a",
+    "Proposed/inference.py": "d4ece0e913c8671d55e7e4cdf93551141a7aa797913756c5b65f65e12b4b9beb",
+    "Proposed/Loss.py": "a413943765707368f6e69a37aa8e021421bc7fae255bd214c666d66cbf7f8752",
+    "Proposed/main.py": "62c154796563e8d72310f1de4b60f4557f9347d595f485baf320b176b50b304a",
+    "Proposed/model.py": "58301a8c4256668177951f67464ae0696fa1154f33e813c6312f37fd510121b7",
+    "Proposed/plot.py": "737151b41a678156cb218fd92e3b539201bd88c4376ef07bcd272f0f69b6eb11",
+    "Proposed/Readme.md": "4f51ed11b67f35004f4d9d1a1b861b3c1586b7ebe20c35b0a428303e4ddf42fb",
+    "Proposed/runtime.py": "eb898c88e314ab78396304bb5879f64603d9e97411ab74f52db938b9c4c50321",
+    "Proposed/train.py": "6dd450bacc90b9992b517a102f0e29144cc280a84eb67f836a24f2148a7bf35b",
+    "Proposed/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "UPINN/evaluate.py": "19f255b81e93ef1def231ed16e61914aa502b3668e498fc8b1e53ee939f2e72c",
+    "UPINN/model.py": "d928141c83083a857927acc6724e3511388482bce4843aec167dfce1df988d2c",
+    "UPINN/Readme.md": "337796741a314fab3b232ea92b9f70c3273e769b91dbc77c864624aeed388cf0",
+    "UPINN/train.py": "1c42295b5626573e2c3618ab1ab09932dc37c1a21c042353584674a139dbb383",
+    "UPINN/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "GIN/source_configs/IEEE_118.json": "4a64719712ac9d928840dbc9f90f722e9ded1f94d5f36f6f97928e52d3d03171",
+    "GIN/source_configs/IEEE_1354.json": "7eeba0618023606e3dac956d45a19ccdcf57951a46afe4116d2c92e4c6a2de18",
+    "GIN/source_configs/IEEE_14.json": "0751bdca7f29036ef58fe6a4506ead179beaba5d8c5a121e55a364769e167c5c",
+    "GIN/source_configs/IEEE_300.json": "5d4536cdc30000696a32acbd44997443a7138299a67688cfd9acf1a58df6b43a",
+    "GIN/Results/IEEE_118/IEEE_118.json": "57ac98c77ad0316251f61a61f4bee4e4a7967a19b1e2b14abeba49e8757b4873",
+    "GIN/Results/IEEE_1354/IEEE_1354.json": "df25ca8fcfade9ad457b1043769cfb66e1945e2e68c05b34e1dfef5e912713bd",
+    "GIN/Results/IEEE_14/IEEE_14.json": "9d014dbb5a022f6b67c569a04580557d5a96f0febc65d8c05d18f3b553a0edb2",
+    "GIN/Results/IEEE_300/IEEE_300.json": "498475df4d571a104165afd98afd53f23a3886d3712246f36215daea872d30da",
+    "PF_Data_Generation/IEEE_118/bus.txt": "57cda2344c2140b85d9511e571cf5b7a0fa1cb8bf7ffc178fe833e7e90d8b01d",
+    "PF_Data_Generation/IEEE_118/gen.txt": "29b31353fff0b75d9fe770c7afd52683497b47d09c6563773bffae308c45e55e",
+    "PF_Data_Generation/IEEE_118/line.txt": "eb522552a146c5576dd709c1f757c169e25b03ab00253c4dbcfe22699ae92191",
+    "PF_Data_Generation/IEEE_1354/bus.txt": "f67bcbd0145bebafe77f5b878692501506b4949efb4e130dea2a88e2a871a962",
+    "PF_Data_Generation/IEEE_1354/gen.txt": "9eadb64422ed6ae1c94264576c0adc33e04c7eab88a3c0d47103900982f1895d",
+    "PF_Data_Generation/IEEE_1354/line.txt": "085bcf4e545e46b668d5865fee86b82ea94c9bcd841994f2a89f3fff77a6d720",
+    "PF_Data_Generation/IEEE_14/bus.txt": "44fdefc386a67841131c1cae3839238ab8c218d5e1630b1e94e0de4bd3ed9cd0",
+    "PF_Data_Generation/IEEE_14/gen.txt": "d59f9cd19f71771cbaddf0a6a8e35d954f247a25038e0e21d60972bb924c226e",
+    "PF_Data_Generation/IEEE_14/line.txt": "467ee08d205f4ba20c98ae298a338fa460fb103f05fbd1c793e84db4ae20e6e1",
+    "PF_Data_Generation/IEEE_300/bus.txt": "4c293997f76e157cfaa323c2340dc4380db4aa23de93a183980ab1fde2834296",
+    "PF_Data_Generation/IEEE_300/gen.txt": "eaa52a542f1feba3ae54cd1e7653cf5dd980091aa1dc2880d551e07126a2f8fe",
+    "PF_Data_Generation/IEEE_300/line.txt": "c12632d1d529d9ec4ef65b12353d4d2f58bd510e3f08b510348ee3a29f48268b",
+    "PINN4PF/source_configs/IEEE_118.json": "9c99353d34fe935c91be7bef5ea5fce7731d2b82a2043a2b26622cc4a31d7fc0",
+    "PINN4PF/source_configs/IEEE_1354.json": "d6f3bb18b6e5d014f0143bf0189fa5b9b37c7de9fe88041d6ca6fd2b4d55e5e3",
+    "PINN4PF/source_configs/IEEE_14.json": "d2578d98033ffccd762c7f637c2e8405a6cd82a474ee08b13c10d9d6761ad6d4",
+    "PINN4PF/source_configs/IEEE_300.json": "0602a300503b2fca5345fa1660bc0f80583fb9f5ec991d041c41d809c8adfc73",
+    "PINN4PF/Results/IEEE_118/IEEE_118.json": "dd7411490046869f782c9398c9f75f50522aacca668401fd61564064b84908f6",
+    "PINN4PF/Results/IEEE_1354/IEEE_1354.json": "05c320f52e160ac164c00e39c5311e51b9932669ec9cb51f1bb47d6e5fe67913",
+    "PINN4PF/Results/IEEE_14/IEEE_14.json": "1eb253d279b17c1bfbd1c389cd401e47ada7afef5f0a241479060c2555bb35aa",
+    "PINN4PF/Results/IEEE_300/IEEE_300.json": "1928591eaab335d6a8f4e76afbe0d89790deca00e18ac67a2960fc7306ed60a8",
+    "Proposed/source_configs/IEEE_118.json": "0fda6116c849447b97f09bd67385424283eb6ccaaa812c99c12b9b857384901b",
+    "Proposed/source_configs/IEEE_1354.json": "868d89ffcebf4adcd5224e05a623867ebb74aa43568940c99e5f0c5ccf114040",
+    "Proposed/source_configs/IEEE_14.json": "c0839bf07c1c0046ad3dedf978ede6c0e75cead553e02c076997896671d25311",
+    "Proposed/source_configs/IEEE_300.json": "078875446bc0e4e9d67f8f96e6e500d89dd512bf3673edbef0c904dbac6e0ad8",
+    "Proposed/_baseline/common.py": "3bf88a786327799db3f22411c92fe8f8bee88079252211efb879242ee9dff82c",
+    "Proposed/_baseline/continued_training.py": "32a4269e1a9c1e43e343555ba2d5e63f27e3538c2fccd9f22818c5d511432ce0",
+    "Proposed/_baseline/data.py": "d9ed70a2b7410efdfcac309e24f2e1517616c03372e0eca4305c85e7eb7e0741",
+    "Proposed/_baseline/defaults.py": "6377d573d76ee4b022ec5e8bf1b467536e8da31e69a74964d045dff34aacbe09",
+    "Proposed/_baseline/evaluate.py": "a79071056de10fdd8ab93afaa11a13a576f91d32fd7c4b41ef5cc8c7d4e4f937",
+    "Proposed/_baseline/native_losses.py": "21fd06475827a826a9a2d121a47204ce8fc8be7888c86612f904554fc6eaefb1",
+    "Proposed/_baseline/paths.py": "825702835a2be94547d57b1609a9f5153fd7b6b88d778354376a58da7c057493",
+    "Proposed/_baseline/training.py": "51cf73c66ef1864e274741210b99811e209f0551c1c3a58ca11275917739c4de",
+    "Proposed/_baseline/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Proposed/Results/IEEE_118/IEEE_118.json": "a4060a9c4164b0b8f88aa423d62a8940fb51016bebcc40642c46267569c38699",
+    "Proposed/Results/IEEE_1354/IEEE_1354.json": "62183b1b43a279ea0abf9a428c4fac6abcb3a420b32041a4cace5ca671c85d6c",
+    "Proposed/Results/IEEE_14/IEEE_14.json": "fb4b6b9293e43e30be47a08782b1baa07cd550a481009303c2d27d191799e86c",
+    "Proposed/Results/IEEE_300/IEEE_300.json": "a4126ea3b90b2eddef52d1f03774e059ee8799fc46b869ca74ad02508ea07aac",
+    "UPINN/source_configs/IEEE_118.json": "1ffa03fca009360f401bb541ffb2160a4f95c995eaa767312664ae18e7c2d5a2",
+    "UPINN/source_configs/IEEE_1354.json": "80edec063d71d0e375ab3ecc4cdcc5c70ac25ffa49ef2541c2c674735790bc53",
+    "UPINN/source_configs/IEEE_14.json": "e3fdcd479f73fb3a28a2e023868caec0cfad3017cf8bcfb897ac09b8509044de",
+    "UPINN/source_configs/IEEE_300.json": "b9f0e0373d969bfc74915352fccf70dc5807b1d0a48c4486e5a2cf71e663be18",
+    "UPINN/Results/IEEE_118/IEEE_118.json": "0ed14d72f4a1e3934471fe591ee85e6b81c8246a0f47e83155aa2f4950dadee5",
+    "UPINN/Results/IEEE_1354/IEEE_1354.json": "0e8158d97f06ae0a273c6ae2eaa4850ee343b6ad66bbcc484df227a87dde8e64",
+    "UPINN/Results/IEEE_14/IEEE_14.json": "6049ca5345af5477a95ddc02120a288a34bbbee2c44e12faf848e5f90dde20f4",
+    "UPINN/Results/IEEE_300/IEEE_300.json": "a89468633d2c7140e7fb68f577328dffe3ed1752e6b969604cdf443d641802f9"
+  }
+}

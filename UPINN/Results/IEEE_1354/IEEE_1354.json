@@ -1,0 +1,54 @@
+{
+  "method": "UPINN",
+  "system": "IEEE_1354",
+  "mode": "train_test",
+  "data_root": "../Data",
+  "device": "cuda",
+  "seed": 42,
+  "cpu_threads": 4,
+  "batch_size": 64,
+  "evaluation_batch_size": 512,
+  "operator_batch_size": 512,
+  "min_batch_size": 1,
+  "data": {
+    "source": "csv",
+    "cache_read": false,
+    "cache_write": false,
+    "validation_samples": 4000,
+    "expected_train_samples": 36000,
+    "expected_test_samples": 4100,
+    "split_seed": 42,
+    "observed_train_pool": 40000,
+    "counts_confirmed": true,
+    "generation_required": true
+  },
+  "training": {
+    "initializer_width": 1536,
+    "epochs": 400,
+    "learning_rate": 0.0001,
+    "min_learning_rate": 1e-05,
+    "weight_decay": 1e-06,
+    "gradient_clip": 10.0,
+    "validate_every": 10,
+    "operator_passes": 4,
+    "operator_noise_std": 0.003,
+    "operator_ridge": 1e-09
+  },
+  "inference": {
+    "max_blocks": 10,
+    "tolerance": 0.0001,
+    "momentum_candidates": [
+      0.0
+    ],
+    "momentum_start_call": 6
+  },
+  "benchmark": {
+    "enabled": false,
+    "single_samples": 40,
+    "repeats": 3,
+    "cpu_threads": 1
+  },
+  "save_heatmap": false,
+  "evaluation_initial_state": "dataset_initial_from_csv",
+  "package_note": "Fresh-start configuration; original server configuration is retained in source_configs. Checkpoints and historical runs are not bundled."
+}
